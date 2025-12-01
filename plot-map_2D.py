@@ -19,6 +19,7 @@ CONFIG = {
         proj_start_year=2021, proj_end_year=2050,
         scenario="rcp26"
     ),
+    "emo": dict(start_year=1991, end_year=2020),
     "cerra": dict(start_year=1981, end_year=2010),
     "eobs": dict(start_year=1981, end_year=2010)
 }
@@ -35,15 +36,15 @@ FUA_MAPPING = {
 }
 
 # =========================================================
-# SELECT DATASET AND PILOT AREA
+# SELECT DATASET AND PILOT AREA --> CONFIGURE HERE <--
 # =========================================================
 
-dataset_name = "era5-2km"
+dataset_name = "emo"
 pilotarea = "Barcelona"
 CSA = FUA_MAPPING.get(pilotarea, pilotarea)
-indicator = "cdd"
-var_name = indicator.upper()  # "CDD"
-cmap = "viridis"
+indicator = "rr"
+var_name = "RR" #indicator.upper()
+cmap = "Blues"
 
 # =========================================================
 # PARAMS EXTRACTION
@@ -280,4 +281,3 @@ if dataset_name == "eu-cordex-11":
         print(f"Warning: {var_name_std} not found in dataset.")
 else:
     plot_var(ds, var_name, "value")
-
