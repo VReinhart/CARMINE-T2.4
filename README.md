@@ -35,8 +35,8 @@ from _lib.paths import (
 
 The helper will create the following directories on first use:
 
-outputs/tables/
-outputs/figures/
+`outputs/tables/`
+`outputs/figures/`
 
 
 These folders are ignored by git (see .gitignore) because outputs
