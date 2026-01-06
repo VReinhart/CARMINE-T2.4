@@ -30,6 +30,8 @@ from _lib.paths import (
     iter_indicators_dirs,
     iter_indicator_files,
 )
+```
+
 
 The helper will create the following directories on first use:
 
