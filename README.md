@@ -13,9 +13,8 @@ To make the notebooks for post-processing runnable on any local machine without 
 
 ### How it works
 - Notebooks are expected to be launched from the `notebooks/` directory.
-- The helper automatically detects the repository root by searching up the directory
-  tree for the `.git` folder.
-- This allows notebooks to locate data (`INDICATORS/`) and create output folders
+- The helper automatically detects the repository root by searching up the Directory tree for the `.git` folder.
+- Through the helper, notebooks locate data (`INDICATORS/`) and create output folders
   (`outputs/tables/`, `outputs/figures/`) without hard-coded paths.
 
 ### Usage in notebooks
