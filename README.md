@@ -9,7 +9,7 @@ Please comment with a small message every push you make, so it's easier to under
 
 To make the notebooks for post-processing runnable on any local machine without modifying absolute paths, this repository includes a shared paths helper at:
 
-notebooks/_lib/paths.py
+`path-helper-notebooks/_lib/paths.py`
 
 ### How it works
 - Notebooks are expected to be launched from the `notebooks/` directory.
