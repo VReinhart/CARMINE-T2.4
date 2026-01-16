@@ -5,3 +5,4 @@
 
 # Generated outputs
 outputs/
+*.nc
