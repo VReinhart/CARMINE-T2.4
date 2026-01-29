@@ -91,6 +91,7 @@ Intended Use
 
 Notes
 -----
+- Input NetCDF files are provided as "*.zip" files
 - Input NetCDF files should contain pre-aggregated temporal data (daily, monthly, or yearly)  
 - All metrics are computed **after regridding and FUA masking**  
 - No original data are modified; outputs are **diagnostic plots only**
